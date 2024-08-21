@@ -3,3 +3,12 @@ os: linux
 files:
   - source: /target/messageUtil-1.0.jar
     destination: /home/ubuntu/CodePipelineJava
+hooks:
+  BeforeInstall:
+    - location: scripts/clean_up_old_versions.sh
+      timeout: 300
+      runas: ubuntu
+  AfterInstall:
+    - location: scripts/start_application.sh
+      timeout: 300
+      runas: ubuntu

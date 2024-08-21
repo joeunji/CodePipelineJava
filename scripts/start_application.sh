@@ -1,0 +1,1 @@
+java -jar /home/ubuntu/CodePipelineJava/messageUtil-1.0.jar &
