@@ -19,5 +19,5 @@ artifacts:
     - target/messageUtil-1.0.jar
     - '**/*'  # 모든 파일과 디렉토리를 포함
   discard-paths: no  # 원본 경로를 유지하여 아티팩트에 포함
-  exclude-paths:
-    - 'target/**'  # 예: target 디렉토리의 파일을 제외
+  # exclude-paths:
+    # - 'target/**'  # 예: target 디렉토리의 파일을 제외
